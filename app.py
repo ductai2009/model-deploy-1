@@ -45,7 +45,7 @@ def cut_img(img):
 @app.route("/", methods=['GET', 'POST'])
 def main():
 	return render_template("index.html")
-@app.route('/predict', methods = ['GET', 'POST'])
+@app.route('/predict', methods = ['POST'])
 def predict():
     imgfile = request.files['imagefile']
     img_path = "./templates/image/" + imgfile.filename
@@ -62,4 +62,4 @@ def predict():
     predict = str(predict)
     return render_template("index.html", pre = predict)
 if __name__ == '__main__':
-    app.run( host = '0.0.0.0', debug= True)
+    app.run( host = '0.0.0.0', port= 8080)
