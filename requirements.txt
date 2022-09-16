@@ -1,0 +1,10 @@
+# pip install -r requirements.txt
+
+# base ----------------------------------------
+matplotlib>=3.5.1
+numpy>=1.19.5
+opencv-python>=4.5.5
+sklearn
+tensorflow>=2.6.0
+flask
+numpy
